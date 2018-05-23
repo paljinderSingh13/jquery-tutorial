@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery tutorial </title>
+</head>
+<body>
+
+
+	<div id="form">
+
+<h1>Add candidate</h1>
+			<div id="txt"> 
+
+				label <input  type="" name=""></br>
+
+			</div>
+	label <input type="" name=""></br>
+	label <input type="" name=""></br>
+	label <input type="" name=""></br>
+	label <input type="" name=""></br>
+	
+	
+</div>
+
+<button id="add_more" > Add more</button>
+
+
+
+
+<h1 id="heading" class="heading" > Jquery selector  </h1>
+
+<h3 id="put_heading" > empty </h3>
+
+<input type="" name="">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script><script type="text/javascript">
+
+  	$(document).on('click', "#add_more", function(){
+
+  		new_element = $("#txt").html();
+
+  		$("#form").append(new_element); 
+
+  	});
+	
+	$(document).ready(function(){
+
+		head = $(".heading").text();
+		console.log(head);
+		$("#put_heading").append(head);
+		alert(123414);
+
+
+	});
+
+
+</script>
+</body>
+</html>
